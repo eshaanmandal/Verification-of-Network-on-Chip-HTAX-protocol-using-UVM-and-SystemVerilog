@@ -1,0 +1,3 @@
+Cadence vManager(64): 22.03-s001: (c) Copyright 1995-2022 Cadence Design Systems Inc - Simulator version: 22.03-s012 - Coverage engine version: 22.03-s012
+Starting gui mode
+vmanager: *I,MERGL1: The merged icc coverage cache was reused for analysis: /home/grads/e/eshaanmandal/lab-10-eshaanmandal/work/sim/regression/htax_regress.eshaanmandal.24_12_03_17_02_05_9451/merged_ucds/default/1733267477407/merged_tests/icc_4e8e3c4e_7997b529.ucd(merged)

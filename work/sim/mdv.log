@@ -1,0 +1,126 @@
+[ERROR] 2024-11-28 00:58:12 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-28 00:58:19 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39719
+[ERROR] 2024-11-28 16:15:40 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-28 16:15:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43577
+[ERROR] 2024-11-28 16:17:50 [com.cadence.ufi.gui.util.UFIExceptionHandler] [AWT-EventQueue-0] - user eshaanmandal does not have permission to delete item that belongs to other users.
+The following items were ignored:
+htax_regress.eshaanmandal.24_11_27_19_08_55_9935 (owner: eshaanmandal)
+htax_regress.eshaanmandal.24_11_27_19_03_39_8670 (owner: eshaanmandal)
+:entity.unauthorized_deletion: user eshaanmandal does not have permission to delete item that belongs to other users.
+The following items were ignored:
+htax_regress.eshaanmandal.24_11_27_19_08_55_9935 (owner: eshaanmandal)
+htax_regress.eshaanmandal.24_11_27_19_03_39_8670 (owner: eshaanmandal)
+
+[ERROR] 2024-11-28 16:17:50 [com.cadence.ufi.gui.util.UFIExceptionHandler] [AWT-EventQueue-0] - user eshaanmandal does not have permission to delete item that belongs to other users.
+The following items were ignored:
+htax_regress.eshaanmandal.24_11_27_19_08_55_9935 (owner: eshaanmandal)
+htax_regress.eshaanmandal.24_11_27_19_03_39_8670 (owner: eshaanmandal)
+
+com.cadence.mdv.exceptions.PermissionException: 
+	at com.cadence.mdv.services.SRFContextServices.deleteSessions(SRFContextServices.java:301)
+	at jdk.internal.reflect.GeneratedMethodAccessor424.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.cadence.mdv.services.security.BkndSecurityAspect.checkPerms(BkndSecurityAspect.java:57)
+	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at jdk.proxy3/jdk.proxy3.$Proxy147.deleteSessions(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor424.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at com.cadence.ufi.service.interceptor.ArgumentsToHandlesServiceInterceptor.invoke(ArgumentsToHandlesServiceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at com.cadence.mdv.remoting.UserInfoOnLocalInterceptor.invoke(UserInfoOnLocalInterceptor.java:20)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at com.cadence.mdv.connection_control.ConnectionControlStatCollectorInterceptor.invoke(ConnectionControlStatCollectorInterceptor.java:40)
+	at com.cadence.mdv.connection_control.ConnectionControlInterceptor.invoke(ConnectionControlInterceptor.java:42)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at jdk.proxy3/jdk.proxy3.$Proxy205.deleteSessions(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor424.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.caucho.hessian.server.HessianSkeleton.invoke(HessianSkeleton.java:302)
+	at com.caucho.hessian.server.HessianSkeleton.invoke(HessianSkeleton.java:217)
+	at org.springframework.remoting.caucho.HessianExporter.doInvoke(HessianExporter.java:223)
+	at org.springframework.remoting.caucho.HessianExporter.invoke(HessianExporter.java:138)
+	at com.cadence.mdv.remoting.CustomHessianServiceExporter.doHandle0(CustomHessianServiceExporter.java:116)
+	at com.cadence.mdv.remoting.CustomHessianServiceExporter.handleRequest(CustomHessianServiceExporter.java:93)
+	at org.springframework.web.context.support.HttpRequestHandlerServlet.service(HttpRequestHandlerServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:859)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at com.cadence.mdv.services.security.MasterAuthenticationFilter.doFilter(MasterAuthenticationFilter.java:94)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at com.cadence.ngv.filters.CorsResponseXFilter.doFilter(CorsResponseXFilter.java:67)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at com.cadence.mdv.embdsrv.JettyServer$1.handle(JettyServer.java:85)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.onFillable(SslConnection.java:411)
+	at org.eclipse.jetty.io.ssl.SslConnection.onFillable(SslConnection.java:305)
+	at org.eclipse.jetty.io.ssl.SslConnection$2.succeeded(SslConnection.java:159)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 2024-11-28 17:08:06 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-11-28 17:33:01 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-28 17:33:07 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40309
+[ERROR] 2024-11-28 17:57:10 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-28 17:57:17 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40411
+[ERROR] 2024-11-29 18:11:39 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-29 18:11:46 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41843
+[ERROR] 2024-11-29 22:11:35 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-11-29 22:11:42 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36943
+[ERROR] 2024-12-03 21:56:06 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 21:56:14 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45617
+[ERROR] 2024-12-03 22:06:57 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 22:07:04 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41475
+[ERROR] 2024-12-03 23:01:09 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-03 23:01:16 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44969
+[ERROR] 2024-12-04 02:12:07 [com.cadence.mdv.bl.impl.core.blNative.MDVEntitySimpleFallbackHandler] [AWT-EventQueue-0] - Slim entity had to fallback because someone asked about REQUIRED_PROOF_BOUND
+[ERROR] 2024-12-04 03:15:57 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-04 03:16:04 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35799
+[ERROR] 2024-12-04 04:16:12 [com.cadence.mdv.services.ClientLinkToServerImpl] [main] - No XLM Home defined in the server project
+[INFO ] 2024-12-04 04:16:19 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33921

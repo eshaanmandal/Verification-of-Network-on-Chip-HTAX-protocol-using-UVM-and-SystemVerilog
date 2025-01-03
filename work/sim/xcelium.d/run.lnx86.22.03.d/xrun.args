@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-f
+run.f
++UVM_TESTNAME=multiport_parallel_random_test
+-svseed
+396326146
